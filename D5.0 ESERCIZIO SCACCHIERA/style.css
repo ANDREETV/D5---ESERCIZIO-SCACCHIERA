@@ -1,0 +1,184 @@
+/******
+*** FONTS
+******/
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@700&display=swap');
+
+/******
+*** COMANDI GLOBALE
+******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/******
+*** CONTENITORE 
+******/
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/******
+*** TITOLO
+******/
+
+h1{
+    margin: 30px 0;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+/******
+*** RIGHE
+******/
+
+.riga {
+    width: auto;
+    display: flex;
+}
+
+.riga div{
+    width: 85px;
+    height: 85px;
+    color: black;
+    font-weight: 900;
+    position: relative;
+    display: flex;
+    background-color: rgb(141, 115, 84);
+}
+
+.riga div p{
+    font-size: 1.5em;
+    position: absolute;
+}
+
+/******
+*** COLORE NERO DELLA SCACCHIERA
+******/
+
+.riga:nth-child(2n) div:nth-child(2n + 1),
+.riga:nth-child(2n + 1 ) div:nth-child(2n){
+    background-color: black;
+}
+
+
+/******
+*** LETTERE SCACCHIERA SOPRA E SOTTO
+******/
+
+.riga:first-of-type div p:first-of-type{
+    top: -30px;
+    left: 35px;
+}
+
+.riga:last-of-type div p:first-of-type{
+    bottom: -30px;
+    left: 35px;
+}
+
+/******
+*** NUMERO 1 SX E DX 
+******/
+.riga:first-of-type div:first-of-type p:nth-child(2){
+    left: -20px;
+    top: 30px;
+}
+
+.riga:first-of-type div:last-of-type p:nth-child(2){
+    right: -20px;
+    top: 30px;
+}
+
+/******
+*** NUMERO 8 SX E DX 
+******/
+.riga:last-of-type div:first-of-type p:nth-child(2){
+    left: -20px;
+    top: 30px;
+}
+
+.riga:last-of-type div:last-of-type p:nth-child(2){
+    right: -20px;
+    top: 30px;
+}
+
+/******
+*** NUMERI SX
+******/
+.riga:nth-child(2) div:first-of-type p, 
+.riga:nth-child(3) div:first-of-type p,
+.riga:nth-child(4) div:first-of-type p,
+.riga:nth-child(5) div:first-of-type p,
+.riga:nth-child(6) div:first-of-type p,
+.riga:nth-child(7) div:first-of-type p {
+    left: -20px;
+    top: 30px;
+}
+
+
+
+
+/******
+*** NUMERI DX
+******/
+.riga:nth-child(2) div:last-of-type p, 
+.riga:nth-child(3) div:last-of-type p,
+.riga:nth-child(4) div:last-of-type p,
+.riga:nth-child(5) div:last-of-type p,
+.riga:nth-child(6) div:last-of-type p,
+.riga:nth-child(7) div:last-of-type p {
+    right: -20px;
+    top: 30px;
+}
+
+
+/******
+*** CDAMBIO COLORE BOX DELLA SCACCHIERA 
+******/
+
+.riga div:hover {
+    background-color: red!important;
+}
+
+/******
+*** BORDI ARROTONDATI 
+******/
+
+.riga:first-of-type div:first-of-type{
+    border-radius: 20px 0 0 0;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.riga:first-of-type div:last-of-type{
+    border-radius: 0 20px 0 0;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.riga:last-of-type div:first-of-type{
+    border-radius: 0 0 0 20px ;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.riga:last-of-type div:last-of-type{
+    border-radius: 0 0 20px 0;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.bordo{
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 40px 0;
+}
