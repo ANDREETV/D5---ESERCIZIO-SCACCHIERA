@@ -15,6 +15,7 @@
     font-family: 'Sofia Sans', sans-serif;
 }
 
+
 /******
 *** TITOLO
 ******/
@@ -28,13 +29,15 @@ h1{
 *** CONTENITORE 
 ******/
 
-.board-container{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
-
+.board{
+    border: 2px solid black;
+}
 /******
 *** RIGA 
 ******/
@@ -57,7 +60,7 @@ h1{
 }
 
 .row div span{
-    font-size: 1rem;
+    font-size: 1.3rem;
     position: absolute;
 }
 
@@ -66,12 +69,12 @@ h1{
 ******/
 
 .row:first-of-type div span:first-of-type{
-    left: 35px;
-    top: -20px;
+    left: 34px;
+    bottom: 80px;
 }
 .row:last-of-type div span:first-of-type{
-    left: 35px;
-    bottom: -20px;
+    left: 34px;
+    top: 80px;
 }
 
 /******
@@ -79,12 +82,12 @@ h1{
 ******/
 
 .row:first-of-type div:first-of-type span:nth-child(2){
-    left: -15px;
+    right: 85px;
     top: 30px;
 }
 
 .row:first-of-type div:last-of-type span:nth-child(2){
-    right: -15px;
+    left: 85px;
     top: 30px;
 }
 
@@ -93,12 +96,12 @@ h1{
 ******/
 
 .row:last-of-type div:first-of-type span:nth-child(2){
-    left: -15px;
+    right: 85px;
     top: 30px;
 }
 
 .row:last-of-type div:last-of-type span:nth-child(2){
-    right: -15px;
+    left: 85px;
     top: 30px;
 }
 
