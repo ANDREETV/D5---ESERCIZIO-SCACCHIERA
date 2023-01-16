@@ -24,6 +24,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 /******
@@ -35,6 +36,16 @@ h1{
     font-size: 50px;
     font-style: italic;
     font-weight: 900;
+}
+
+/******
+*** BORDO
+******/
+
+.bordo{
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 40px 0;
 }
 
 /******
@@ -53,7 +64,7 @@ h1{
     font-weight: 900;
     position: relative;
     display: flex;
-    background-color: rgb(141, 115, 84);
+    background-color: rgba(216, 105, 37, 0.8);
 }
 
 .riga div p{
@@ -177,8 +188,3 @@ h1{
     border-right: 2px solid black;
 }
 
-.bordo{
-    border: 2px solid black;
-    border-radius: 30px;
-    margin: 40px 0;
-}
